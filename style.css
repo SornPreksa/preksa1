@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  main {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(228, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main form {
+    width: 900px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+  }
+  
+  main form .box {
+    width: 450px;
+    height: 550px;
+    padding: 40px 40px;
+    background-color: white;
+    border-radius: 9px 0px 0px 9px;
+    flex-direction: column;
+  }
+  main form .box1 {
+    width: 450px;
+    height: 550px;
+    background-color: blue;
+    border-radius: 0px 9px 9px 0px;
+  }
+  main form .box .put input {
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 9px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    flex: 1 auto;
+    outline: none;
+  }  
+  main form .box .btn button {
+    width: 100%;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    margin-top: 15px;
+    border-radius: 5px;
+  }
+  main form .box .btn > button ~ button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    
+
+  }
+ 
+  main form .box .btn button:hover {
+    background-color: aqua;
+    color: black;
+  }
+  .ck{
+    margin-top: 20px;
+    flex-flow: row wrap;
+  }
+  .ck a{
+    text-decoration: none;
+  }
+  .btn{
+    position: relative;
+  }
+  
+  main form .box .put input:focus{
+    border: 2px solid red;
+  }
+  @media screen and (max-width: 780px) {
+    main form {
+      width: 100%;
+      flex-flow: row-reverse wrap-reverse;
+    }
+    main form .box1 {
+      display: none;
+    }
+    main form .box {
+      border-radius: 5px;
+      height: auto;
+    }
+    .box1 img {
+      width: 100%;
+    }
+  
+    .line1 a{
+      flex-direction: column;
+      margin-top: 10px;
+      text-align: center;
+    }
+    .ck,label ~ a{
+       width: 100%;
+       font-size: 15px;
+       text-align: center;
+       text-decoration: none;
+    }
+  
+   
+  }
+  
